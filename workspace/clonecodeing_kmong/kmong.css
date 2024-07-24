@@ -499,19 +499,6 @@ main {
   animation: slideAnimation 20s infinite;
 }
 
-@keyframes slideAnimation {
-  0% { transform: translateX(0); }
-  10% { transform: translateX(0); }
-  20% { transform: translateX(-703px); }
-  30% { transform: translateX(-1406px); }
-  40% { transform: translateX(-2109px); }
-  50% { transform: translateX(-2812px); }
-  60% { transform: translateX(-3515px); }
-  70% { transform: translateX(-4218px); }
-  80% { transform: translateX(-4921px); }
-  90% { transform: translateX(-5624px); }
-  100% { transform: translateX(-6327px); }
-}
 
 .keen-slider__slide {
   flex: 0 0 703px; /* Flexbox 설정으로 슬라이드 크기를 고정 */

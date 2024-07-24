@@ -79,12 +79,32 @@ document.addEventListener('DOMContentLoaded', function() {
 //   document.querySelector('.section-categori-linebox').classList.toggle('expanded', !expanded);
 // });
 
-// document.addEventListener('DOMContentLoaded', function () {
-//   new KeenSlider('.keen-slider', {
-//     loop: true,
-//     duration: 20000,
-//     slidesPerView: 1,
-//     spacing: 0,
-//     controls: true,
-//   });
-// });
+// 슬라이드베너 부분
+document.addEventListener('DOMContentLoaded', () => {
+  const slider = document.querySelector('.main-slider');
+  const slides = document.querySelectorAll('.keen-slider__slide');
+  const slideWidth = slides[0].offsetWidth;
+  const totalSlides = slides.length;
+  let currentIndex = 0;
+
+  // Clone slides and append to the end
+  const firstSlideClone = slides[0].cloneNode(true);
+  slider.appendChild(firstSlideClone);
+  
+  function moveSlider() {
+      currentIndex++;
+      if (currentIndex >= totalSlides) {
+          slider.style.transition = 'none'; // Disable transition for the reset
+          slider.style.transform = `translateX(0px)`;
+          currentIndex = 1; // Reset to the first slide (after the cloned one)
+          setTimeout(() => {
+              slider.style.transition = 'transform 0.5s ease'; // Re-enable transition
+              slider.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+          }, 20); // Short delay to allow reset
+      } else {
+          slider.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+      }
+  }
+
+  setInterval(moveSlider, 3000); // Change slide every 3 seconds
+});
