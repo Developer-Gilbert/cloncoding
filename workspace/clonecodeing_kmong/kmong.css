@@ -473,7 +473,7 @@ a {
 
 .keen-slider__slide {
   min-width: 700px;
-  height: 280px;  
+  height: 280px;
   flex-shrink: 0;
 }
 
@@ -596,23 +596,23 @@ nav {
   row-gap: 8px;
 }
 .main-sec-categori-list-img {
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: rgb(250, 250, 252);
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgb(250, 250, 252);
 }
 img {
   border-style: none;
 }
 .main-sec-categori-txt-all {
   font-size: 14px;
-    font-weight: 400;
-    color: rgb(48, 52, 65);
+  font-weight: 400;
+  color: rgb(48, 52, 65);
 }
 .main-sce-categori-other {
   position: relative;
@@ -668,9 +668,9 @@ img {
 }
 .main-third-section-txt-style {
   margin: 0px;
-    font-size: 20px;
-    color: rgb(33, 34, 36);
-    font-weight: 500;
+  font-size: 20px;
+  color: rgb(33, 34, 36);
+  font-weight: 500;
 }
 .main-third-section-head {
   display: flex;
@@ -740,7 +740,7 @@ img {
   min-height: 279px;
   margin-top: 24px;
 }
-.main-third-section-div-all{
+.main-third-section-div-all {
   cursor: pointer;
 }
 .main-third-list {
@@ -787,7 +787,7 @@ img {
   height: 100%;
   display: block;
 }
-.main-third-list-img{
+.main-third-list-img {
   width: 100%;
   height: 100%;
   opacity: 1;
@@ -905,13 +905,10 @@ img {
   cursor: pointer;
 }
 .main-four-section-sec-box-vido {
-  pointer-events: none;
+  /* pointer-events: none; */
   transition: opacity 1000ms ease 100ms;
   opacity: 1;
 }
-
-
-
 
 /*footer부분 css 여기부터 시작*/
 .footer-line {
