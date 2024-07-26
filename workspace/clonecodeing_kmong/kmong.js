@@ -80,6 +80,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
+
 // 슬라이드 배너부분 js
 // 객체를 생성하는 개념과 비슷하다
 document.addEventListener('DOMContentLoaded', () => {
@@ -158,3 +160,21 @@ document.addEventListener('DOMContentLoaded', () => {
     updateDots();
   }
 });
+
+
+// sectio6에 버튼부분 색 바뀌는 js
+document.addEventListener('DOMContentLoaded', function () {
+  const buttons = document.querySelectorAll('.main-six-sec-but');
+
+  buttons.forEach((button) => {
+    button.addEventListener('mouseenter', function () {
+      button.style.backgroundColor = '#f0f0f0'; // 마우스 오버 시 색 변경
+    });
+
+    button.addEventListener('mouseleave', function () {
+      button.style.backgroundColor = ''; // 마우스가 버튼을 벗어날 때 원래 색으로 복귀
+    });
+  });
+});
+
+
