@@ -1096,8 +1096,8 @@ img {
 .main-six-sec-list-img-link {
   text-decoration: none;
   max-width: 376px;
-  overflow: hidden; 
-  display: inline-block; 
+  overflow: hidden;
+  display: inline-block;
 }
 
 .main-six-sec-list-img {
@@ -1105,17 +1105,17 @@ img {
   border-radius: 8px;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 .main-six-sec-list-img img {
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
   width: 100%;
   height: auto;
 }
 
 .main-six-sec-list-img:hover img {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .main-six-sec-list-img-txt {
@@ -1167,24 +1167,20 @@ img {
 }
 /* section7 끝나는부분 */
 /* section8 시작하는부분 */
+.main-eigt-sec-all-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.main-eigt-sec-txtbox {
+  width: 1200px;
+  padding: 0px 16px;
+  margin: 0px auto;
+  display: grid;
+}
 
 /* section8 끝나는부분 */
-
 
 /*footer부분 css 여기부터 시작*/
 .footer-line {
