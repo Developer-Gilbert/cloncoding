@@ -1179,7 +1179,104 @@ img {
   margin: 0px auto;
   display: grid;
 }
-
+.main-eigt-sec-txt-h2 {
+  margin: 0px;
+  font-size: 20px;
+  color: rgb(33, 34, 36);
+  font-weight: 500;
+}
+.main-eigt-sec-txt-p {
+  margin: 4px 0px 0px;
+  font-size: 16px;
+  color: rgb(114, 117, 133);
+  font-weight: normal;
+}
+.main-eigt-sec-box {
+  margin-top: 24px;
+  display: flex;
+  gap: 24px;
+}
+.css-1j8r2w0 {
+  cursor: default;
+}
+.css-6pqdf2 {
+  margin: 0px;
+  width: 374px;
+  padding: 12px 0px;
+  font-size: 16px;
+  color: rgb(33, 34, 36);
+  text-align: center;
+  background-color: rgb(255, 212, 0);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.css-udcuwn {
+  box-shadow: rgba(48, 52, 65, 0.08) 0px 5px 23px -2px;
+  border: 1px solid rgb(255, 212, 0);
+  margin-bottom: 16px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.css-1sbi2sv {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 20px 24px 20px 12px;
+}
+.css-1okqk0z {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 20px;
+  flex: 1 1 0%;
+}
+.css-1sj5sv9 {
+  color: rgb(33, 34, 36);
+  font-size: 19px;
+}
+b,
+strong {
+  font-weight: 700;
+}
+.css-r5wu0g {
+  text-decoration: none;
+  cursor: pointer;
+}
+.css-1raaqrb {
+  color: rgb(154, 155, 167);
+  font-size: 14px;
+  position: relative;
+}
+.css-1raaqrb::after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  transition: opacity 150ms, transform 150ms;
+  background-color: rgb(200, 202, 210);
+  opacity: 0;
+  transform: translate3d(0px, -2px, 0px);
+}
+.css-r5say7 {
+  width: 48px;
+  height: 48px;
+  background-color: rgb(228, 229, 237);
+  position: relative;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius: 50%;
+}
+.css-8cswyy {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s;
+  border-radius: 50%;
+  opacity: 1;
+}
 /* section8 끝나는부분 */
 
 /*footer부분 css 여기부터 시작*/
