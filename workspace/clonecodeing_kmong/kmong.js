@@ -78,10 +78,6 @@ document.addEventListener('DOMContentLoaded', function () {
 //   document.querySelector('.section-categori-linebox').classList.toggle('expanded', !expanded);
 // });
 
-
-
-
-
 // 슬라이드 배너부분 js
 // 객체를 생성하는 개념과 비슷하다
 document.addEventListener('DOMContentLoaded', () => {
@@ -103,14 +99,14 @@ document.addEventListener('DOMContentLoaded', () => {
   let autoSlideInterval;
   // 자동슬라이드 제어하는 간격 타이머
 
-//  첫번째슬라이드복재본을 맨뒤에 추가하고 마지막슬라이드 복제본을 맨 앞에 추가
+  //  첫번째슬라이드복재본을 맨뒤에 추가하고 마지막슬라이드 복제본을 맨 앞에 추가
   banner.appendChild(firstSlideClone);
   banner.insertBefore(lastSlideClone, slides[0]);
 
-// translateX를 이용해 2번째 슬라이드부터 보이게한다
+  // translateX를 이용해 2번째 슬라이드부터 보이게한다
   banner.style.transform = `translateX(${-700 * count}px)`;
 
-//  4초마다 슬라이드 실행
+  //  4초마다 슬라이드 실행
   autoSlideInterval = setInterval(autoSlide, 4000);
 
   // dot의 배경색을 변경하는 js
@@ -119,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
       dot.style.background = i + 1 === count ? '#313131' : 'none';
     });
   }
-// handleDotClick이 함수로 dot을 클릭할수있게해준다 클릭하면 해당 인덱스로 슬라이드를 이동시키고 자동슬라이드 재설정
+  // handleDotClick이 함수로 dot을 클릭할수있게해준다 클릭하면 해당 인덱스로 슬라이드를 이동시키고 자동슬라이드 재설정
   function handleDotClick(dot, index) {
     dot.addEventListener('click', () => {
       clearInterval(autoSlideInterval);
@@ -130,10 +126,10 @@ document.addEventListener('DOMContentLoaded', () => {
       autoSlideInterval = setInterval(autoSlide, 2000);
     });
   }
-// dot에 클릭을 할 수 있게 만들어주는 함수
+  // dot에 클릭을 할 수 있게 만들어주는 함수
   dots.forEach((dot, i) => handleDotClick(dot, i));
 
-// 이전 버튼을 클릭할수있게해주는 함수 이전버튼을 클릭하면  하나 이전으로 이동시키고 슬라이드 초기화
+  // 이전 버튼을 클릭할수있게해주는 함수 이전버튼을 클릭하면  하나 이전으로 이동시키고 슬라이드 초기화
   prev.addEventListener('click', () => {
     clearInterval(autoSlideInterval);
     count = count === 1 ? slides.length : count - 1;
@@ -142,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateDots();
     autoSlideInterval = setInterval(autoSlide, 2000);
   });
-// 다음 버튼을 클릭할수있게해주는 함수 다음버튼을 클릭하면  하나 다음으로 이동시키고 슬라이드 초기화
+  // 다음 버튼을 클릭할수있게해주는 함수 다음버튼을 클릭하면  하나 다음으로 이동시키고 슬라이드 초기화
   next.addEventListener('click', () => {
     clearInterval(autoSlideInterval);
     count = count === slides.length ? 1 : count + 1;
@@ -161,7 +157,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-
 // sectio6에 버튼부분 색 바뀌는 js
 document.addEventListener('DOMContentLoaded', function () {
   const buttons = document.querySelectorAll('.main-six-sec-but');
@@ -176,5 +171,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-
 
