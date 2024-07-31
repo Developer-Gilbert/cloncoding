@@ -71,12 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// 숨긴 카테고리 마지막에해보자
-// document.querySelector('.section-categori-first-but').addEventListener('click', function() {
-//   const expanded = this.getAttribute('aria-expanded') === 'true';
-//   this.setAttribute('aria-expanded', !expanded);
-//   document.querySelector('.section-categori-linebox').classList.toggle('expanded', !expanded);
-// });
+
 
 // 슬라이드 배너부분 js
 // 객체를 생성하는 개념과 비슷하다
